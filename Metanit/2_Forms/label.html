@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Метки и автофокус</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Метки label</h2>
+    <form action="label.html" method="get" autocomplete="off">
+        <p>
+            <label for="login">Элемент <b>label</b></label>
+            <input type="text" id="login" name="login" />
+        </p>
+        <p>
+            <label for="password">Элемент <b>label</b></label>
+            <input type="password" id="password" name="password" />
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <h2>Автофокус</h2>
+    <label>
+        Это поле ввода с атрибутом <b>autofocus</b>, поэтому курсор при открытии страницы по умолчанию будет на нем
+        <input type="text" name="autofocusedTextbox" autofocus/>
+    </label>
+</body>
+</html>

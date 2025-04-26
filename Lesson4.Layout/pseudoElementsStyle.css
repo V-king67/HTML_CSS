@@ -1,0 +1,40 @@
+﻿.menu {
+    list-style-type: none;
+}
+
+.menuList::before {
+    content: '* ';
+    color: coral;
+}
+
+.menuList:nth-child(2n-1)::after {
+    content: ' Добавлено в css ';
+    color: rebeccapurple;
+}
+
+.menuList:hover::after {
+    content: ' <<';
+}
+
+.menuListNew::after {
+    content: ' super NEW!!!';
+    color: red;
+}
+
+.product {
+    width: 250px;
+    border: 1px solid black;
+    margin: 4px;
+}
+
+.productNew::after {
+    content: ' new!!!';
+    text-transform: uppercase;
+    color: darkred;
+    background-color: lemonchiffon;
+}
+
+.productImg {
+    height: 150px;
+    background-color: forestgreen;
+}

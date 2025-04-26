@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ввод чисел</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Input type = number</h2>
+    <form action="input_number.html" method="get" autocomplete="off">
+        <p>
+            <label for="age">Возраст: </label>
+            <!-- Аттрибут step устанавливает шаг, на который изменится значение поля при нажатии на стрелки вверх/вниз -->
+            <input type="number" step="1" min="1" max="100" value="10" id="age" name="age" />
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <h2>List attribute</h2>
+    <form>
+        <label>
+            Выберите число из предложенного списка
+            <input type="number" name="selectedNum" list="numList"
+                   min="5000" max="50000" step="5000" id="numInput" />
+        </label>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <h2>Input type range</h2>
+    <form>
+        <p>
+            <label for="price">Ползунок input type = range </label>
+            1<input type="range" step="5" min="0" max="100" value="10" id="price" name="rangeInput" />100
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <datalist id="numList">
+        <option value="10000" />
+        <option value="20000" />
+        <option value="30000" />
+        <option value="40000" />
+        <option value="50000" />
+    </datalist>
+</body>
+</html>

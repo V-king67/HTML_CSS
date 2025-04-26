@@ -1,0 +1,23 @@
+﻿.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex-grow: 1;
+    /*При достижении ширины меньше flex-basis, происходит перенос*/
+    flex-basis: 200px;
+    border: 1px solid black;
+}
+
+.textBig {
+    /*Коэффициент размера*/
+    flex-grow: 2;
+}
+
+.container {
+    /*Ширина будет адаптивной, пока не достигнет max, дальше фиксированная*/
+    max-width: 750px;
+    /*Центрируем*/
+    margin: 0 auto;
+}

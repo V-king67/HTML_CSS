@@ -1,0 +1,24 @@
+﻿.header {
+    font: 24px;
+    background-color: #efab7b;
+}
+
+.footer {
+    font-style: italic;
+}
+
+.textRed {
+    color: red;
+    /*Высота не поменяется для строчных элементов (span)*/
+    height:500px;
+}
+
+.squareBlock{
+    border: 1px solid #000000;
+    width: 350px;
+    height: 200px;
+    margin: 16px;
+    padding: 24px;
+    /*Чтобы размеры элемента не зависели от содержимого*/
+    box-sizing: border-box;
+}

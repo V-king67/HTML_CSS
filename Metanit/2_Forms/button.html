@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Кнопки</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <form>
+        <p>
+            <label>
+                Логин
+                <input type="text" name="loginValue" value="SampleLogin" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Пароль
+                <input type="password" name="passValue" value="SamplePass" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Кнопка без специального назначения
+                <button type="button">Button</button>
+            </label>
+        </p>
+        <p>
+            <label>
+                Кнопка отправки формы
+                <!-- formaction и formmethod переопределяют соответствующие атрибуты родительской формы -->
+                <button type="submit" formaction="button.html" formmethod="get">Submit</button>
+            </label>
+        </p>
+        <p>
+            <label>
+                Кнопка сброса значений формы
+                <button type="reset">Reset</button>
+            </label>
+        </p>
+        <p>
+            <label>
+                Input type="image" позволяет использовать в качестве кнопки изображение
+                <input type="image" name="btnSearch" src="img/search32.png" formaction="button.html" formmethod="get" />
+            </label>
+        </p>
+    </form>
+</body>
+</html>

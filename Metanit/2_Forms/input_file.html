@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Отправка файлов</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+
+    <h2>Отправка файла</h2>
+    <!-- Атрибут enctype="multipart/form-data" необходим для отправки файла на сервер -->
+    <form action="input_file.html" method="get" autocomplete="off" enctype="multipart/form-data">
+        <p>
+            <label>
+                input type = <b>file</b>
+                <input type="file" name="fileInput" />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+
+    <h2>Различные атрибуты</h2>
+    <form action="input_file.html" method="get" autocomplete="off" enctype="multipart/form-data">
+        <p>
+            <label>
+                <b>accept</b> = "image/*"
+                <input type="file" name="fileHinted" accept="image/*" />
+            </label>
+        </p>
+        <p>
+            <label>
+                <b>multiple</b>
+                <input type="file" name="multipleFiles" multiple />
+            </label>
+        </p>
+        <p>
+            <label>
+                <b>required</b>
+                <input type="file" name="requiredFile" required />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>

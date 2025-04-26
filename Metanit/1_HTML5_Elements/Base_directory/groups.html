@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Группировка</title>
+</head>
+<body>
+    <a href="../index.html">Вернуться на главную</a>
+    <h1>Элементы группировки h1</h1>
+    <!-- Группировка элементов с помощью div -->
+    <div>
+        <!-- Якорная гиперссылка -->
+        <a href="menu_page.html">Элемент "a" с атрибутом "href" - ссылка на menu_page относительно base_directory</a>
+        <div>
+            <p>Элемент "p" - Абзац текста</p>
+            <p>Второй абзац текста</p>
+            <p>Элемент "br" <br /> делит этот абзац на две строки</p>
+        </div>
+
+        <pre>
+        Элемент     "pre"   выводит
+            предварительно отформатированный
+        текст   так, как он     написан в коде
+    </pre>
+
+        <div>
+            <p>Элемент "span" форматирует заключенный в него <span style="color:green">фрагмент текста</span></p>
+            <p>В отличие от div и p, элемент "span" <span style="color:red">не переносит</span> содержимое на следующую строку</p>
+            <p>
+                Важно, что элементы <span style="color:deepskyblue">div и p</span> являются <span style="color:deepskyblue">блочными</span> и могут содержать внутри любые другие элементы. <br />
+                В отличие от них, <span style="color:yellowgreen">span</span>  является <span style="color:yellowgreen">строчным</span>,
+                т.е. встраивает свое содержимое во внешний контейнер, например тот же <span style="color:deepskyblue">div или p</span> <br />
+                При этом <span style="color:red">не</span> стоит помещать <span style="color:deepskyblue">блочные</span> элементы внутрь <span style="color:yellowgreen">строчного span</span>.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

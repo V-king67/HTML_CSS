@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Список select</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Выпадающий список</h2>
+    <form action="select.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Элемент <b>select</b>
+                <select name="selectedValue">
+                    <option disabled>option disabled</option>
+                    <option value="option1">Элемент option #1</option>
+                    <option value="option2">Элемент option #2</option>
+                    <option value="option3">Элемент option #3</option>
+                    <option value="option4">Элемент option #4</option>
+                    <option value="defaultOption" selected>option selected - по умолчанию</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+
+    <h2>Раскрытый список с множественным выбором</h2>
+    <form action="select.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Элемент <b>select multiple</b>
+                <select multiple name="multiSelectedValues">
+                    <option value="option1">Элемент option #1</option>
+                    <option value="option2">Элемент option #2</option>
+                    <optgroup label="optgroup1 группировка опций">
+                        <option value="option1.1">Элемент option #1</option>
+                        <option value="option1.2">Элемент option #2</option>
+                        <option value="option1.3">Элемент option #3</option>
+                    </optgroup>
+                    <optgroup label="optgroup2 группировка опций">
+                        <option value="option2.1">Элемент option #1</option>
+                        <option value="option2.2">Элемент option #2</option>
+                        <option value="option2.3">Элемент option #3</option>
+                    </optgroup>
+                </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>

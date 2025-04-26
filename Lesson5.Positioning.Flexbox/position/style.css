@@ -1,0 +1,27 @@
+﻿/*Position позволяет накладывать блоки друг на друга*/
+.content {
+    position: relative;
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: forestgreen;
+}
+
+.item-2 {
+    background-color: cadetblue;
+    top: 50px;
+    left: 50px;
+}
+
+.item-3 {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+}
+
+.content:hover .item-2 {
+    z-index: 1;
+}

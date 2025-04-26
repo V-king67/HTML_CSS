@@ -1,0 +1,77 @@
+﻿.block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.inlineBlock {
+    /*Используется очень редко, когда надо задать строчному элементу размеры, обычно это кнопка*/
+    display: inline-block;
+}
+
+/*По сути полное удаление элемента, в том числе его не видит синтезатор речи*/
+.displayNone {
+    display: none;
+}
+/*Просто делает элемент невидимым*/
+.visibilityHidden {
+    visibility: hidden;
+}
+/*Отображение в строку*/
+.inline {
+    display: inline;
+}
+
+/*FlexBox-ы*/
+
+.centerBox {
+    display: flex;
+    justify-content: center;
+}
+
+.spacedAroundBox {
+    display: flex;
+    /*Распределяет контент по всей ширине с равными отступами слева и справа*/
+    justify-content: space-around;
+}
+
+.spacedBetweenBox {
+    display: flex;
+    /*Распределяет контент по всей ширине с равными отступами между дочерними элементами*/
+    justify-content: space-between;
+}
+
+.verticalCenterBox {
+    display: flex;
+    height: 200px;
+    background-color: aquamarine;
+    /*Позиционирование по вертикали*/
+    align-items: center;
+}
+
+.flexWrapWrapBox {
+    display: flex;
+    justify-content: space-around;
+    /*Перенос элементов на новую строку*/
+    flex-wrap: wrap;
+}
+
+.flexDirectionColumn {
+    display: flex;
+    flex-direction: column;
+    /*Элемент разворачивается, поэтому за горизонтальное центрирование теперь отвечает align*/
+    align-items: center;
+}
+
+/*Выравнивание индидуальных элементов*/
+.highBox {
+    height: 500px;
+}
+
+.blockMiddle {
+    align-self: center;
+}
+
+.blockEnd {
+    align-self: flex-end;
+}

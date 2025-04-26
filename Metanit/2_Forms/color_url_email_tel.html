@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ввод цвета, url, email, телефона</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Установка цвета</h2>
+    <form action="color_url_email_tel.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Выберите цвет
+                <input type="color" name="colorInput" />
+            </label>
+        </p>
+        <p>
+            <button>Выбрать</button>
+        </p>
+    </form>
+
+    <h2>Набор цветов в datalist</h2>
+    <form action="color_url_email_tel.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Можно выбрать цвет из списка datalist
+                <input type="color" name="colorFromList" list="colors" />
+            </label>
+        </p>
+        <p>
+            <button>Выбрать</button>
+        </p>
+    </form>
+    <datalist id="colors">
+        <option value="#008000" label="green" />
+        <option value="#0000FF" label="blue" />
+        <option value="#eaed0c" label="yellow" />
+    </datalist>
+
+    <h2>URL, email, телефон</h2>
+    <form action="color_url_email_tel.html" method="get" autocomplete="off">
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="user@example.com" id="email" name="email" />
+        </p>
+        <p>
+            <label for="url">URL: </label>
+            <input type="url" id="url" name="url" placeholder="https://example.com"/>
+        </p>
+        <p>
+            <label for="phone">Телефон: </label>
+            <input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+</body>
+</html>

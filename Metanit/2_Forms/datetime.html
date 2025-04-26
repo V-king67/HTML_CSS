@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ввод даты и времени</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Поле установки даты</h2>
+    <form action="datetime.html" method="get" autocomplete="off">
+        <p>
+            <label for="date">input type = <b>date</b></label>
+            <input type="date" id="date" name="date" />
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <h2>Менее частые элементы</h2>
+    <form action="datetime.html" method="get" autocomplete="off">
+        <h3>Ввод месяца</h3>
+        <label>
+            input type = <b>month</b>
+            <input type="month" name="month" />
+        </label>
+        <h3>Ввод недели</h3>
+        <label>
+            input type = <b>week</b>
+            <input type="week" name="week" />
+        </label>
+        <h3>Ввод точной даты и времени</h3>
+        <label>
+            input type = <b>datetime-local</b>
+            <input type="datetime-local" name="datetime" />
+        </label>
+        <h3>Ввод времени</h3>
+        <label>
+            input type = <b>time</b>
+            <input type="time" name="time" />
+        </label>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+
+    </form>
+</body>
+</html>

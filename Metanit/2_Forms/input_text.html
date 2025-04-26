@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Текстовые поля</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Input type = text</h2>
+    <form action="input_text.html" method="get" autocomplete="off">
+        <p><input type="text" name="userName" placeholder="Введите имя" size="18" /></p>
+        <p><input type="text" name="userPhone" placeholder="Введите номер телефона" size="18" maxlength="11" /></p>
+        <p><input type="text" name="textboxReadonly" value="Это поле с атрибутом readonly" readonly size="25" /></p>
+        <p><input type="text" name="textboxDisabled" value="Это поле с атрибутом disabled" disabled size="25" /></p>
+        <p>
+            <label>
+                Поле ввода с атрибутом list
+                <input name="hint" list="hintsList" placeholder="атрибут list содержит подсказки" size="30">
+            </label>
+        </p>
+        <input type="text" name="rightToLeftTextbox" dir="rtl" placeholder="dir = rtl" />
+        <p>
+            <button>Отправить</button>
+            <button type="reset">Отмена</button>
+        </p>
+    </form>
+
+    <h2>Input type = search</h2>
+    <form autocomplete="off">
+        <p>
+            <input type="search" name="term" placeholder="input type = search" />
+            <input type="submit" value="Поиск" />
+        </p>
+    </form>
+
+    <h2>Input type = password</h2>
+    <form autocomplete="off">
+        <p>
+            <input type="text" name="login" placeholder="у следующего поля ввода type = password" size="35" />
+            <input type="password" name="password" size="35" />
+            <input type="submit" value="Авторизация" />
+        </p>
+    </form>
+
+    <datalist id=hintsList>
+        <label>
+            Подсказки хранятся в datalist
+            <select>
+                <option value="это datalist" label="это label элемента option" />
+                <option value="с элементами option" />
+            </select>
+        </label>
+    </datalist>
+    <datalist id="shortList">
+        <option value="простой" />
+        <option value="список" />
+        <option value="опций" />
+    </datalist>
+</body>
+</html>

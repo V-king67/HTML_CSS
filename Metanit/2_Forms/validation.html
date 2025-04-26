@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Валидация форм</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Обязательные поля</h2>
+    <form action="validation.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Атрибут <b>required</b>
+                <input type="text" name="login" required />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+
+    <h2>Ограничение диапазона значений</h2>
+    <form action="validation.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Атрибуты <b>min</b> и <b>max</b>
+                <input type="number" min="0" max="9" name="digit" />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+
+    <h2>Шаблон</h2>
+    <form action="validation.html" method="get" autocomplete="off">
+        <p>
+            <label>
+                Атрибут <b>pattern</b>
+                <input type="tel" name="phone" pattern="\+\d-\d{3}-\d{3}-\d{4}" placeholder="+1-333-333-4444" />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+
+    <h2>Отключение валидации</h2>
+    <p>
+        form <b>novalidate</b> <br />
+        или <br />
+        button <b>formnovalidate</b>
+    </p>
+</body>
+</html>

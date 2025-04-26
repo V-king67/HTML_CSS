@@ -1,0 +1,57 @@
+﻿/*Обращение по тегу*/
+body {
+    background-color: antiquewhite;
+}
+
+p {
+    color: saddlebrown;
+}
+/*Обращение по классу*/
+.heading {
+    color: darkred;
+}
+
+.grey-back {
+    background-color: darkgrey;
+}
+/*Обращение по тегу с конкретным аттрибутом*/
+input[type="text"] {
+    color: red;
+}
+
+.block {
+    width: 90%;
+    height: 300px;
+    border: 1px solid saddlebrown;
+    background-color: wheat;
+    /*Если вставляем фотку чтобы подгонялась под размер блока*/
+    background-size: cover;
+    /*И центрировалась*/
+    background-position: center;
+}
+
+.plainFont {
+    font-family: sans-serif;
+}
+
+.noMarkList {
+    list-style-type: none;
+}
+
+/*  Стиль только для вложенных элементов <ul><li><a/></li></ul>
+    Очень ресурсоемко, не рекомендуется к использованию
+    Лучше классы!
+*/
+ul li a {
+    color: hotpink;
+}
+/*  Знак ">" - обращение к дочернему элементу, т.е. только ближайшим внутренним
+    Все заменяется классами
+*/
+.outerList > li {
+    border: 2px solid #b6662d
+}
+/*  Знак "+" - обращение к соседним элементам, находящимся на одном уровне вложенности*/
+.outerList + .text {
+    text-transform: capitalize
+}

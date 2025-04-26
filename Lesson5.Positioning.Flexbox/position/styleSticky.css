@@ -1,0 +1,16 @@
+﻿.block {
+    height: 700px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.item {
+    background-color: grey;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.container{
+    position:relative;
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Элементы форм</title>
+</head>
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <form action="form_elements.html" method="get" id="myForm">
+        <h2>Поле ввода текста</h2>
+        <p>
+            <label>
+                input type="text"
+                <!-- Атрибут name позволяет идентифицировать поле ввода -->
+                <input type="text" name="textInput" placeholder="Введите текст сюда" />
+            </label>
+        </p>
+
+        <h2>Многострочное поле ввода текста</h2>
+        <p>
+            <label>
+                textarea
+                <textarea name="textareaInput" placeholder="Сюда вводится многострочный текст"></textarea>
+            </label>
+        </p>
+
+        <h2>Выпадающий список</h2>
+        <p>
+            <label>
+                select
+                <select name="selectList" form="myForm">
+                    <option value="option1">элемент option #1</option>
+                    <option value="option2">элемент option #2</option>
+                    <option value="option3">элемент option #3</option>
+                    <optgroup label="группа элентов optgroup1">
+                        <option value="opt1">Элемент opt1</option>
+                        <option value="opt2">Элемент opt2</option>
+                        <option value="opt3">Элемент opt3</option>
+                    </optgroup>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>Это и другие описания располагаются в элементе <b>label</b>, внутрь которого помещается нужный элемент формы, например, <b>input</b></label>
+        </p>
+
+        <h2>Кнопка</h2>
+        <p>
+            <label>
+                button
+                <button name="btnSubmit" value="enter">Войти</button>
+            </label>
+        </p>
+    </form>
+</body>
+</html>
