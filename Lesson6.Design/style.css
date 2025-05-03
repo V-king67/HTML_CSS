@@ -15,23 +15,63 @@ body {
 .text {
     font-size: 16px;
     line-height: 26px;
-    color: #1F3F68
+    color: #1F3F68;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    opacity: 60%;
 }
 
-.topMenu ul {
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.topMenu {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    padding-top: 34px;
+}
+
+.topInfo {
+    padding-top: 107px;
+    flex-grow: 1;
+    background-image: url(img/title.png);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .topHeader {
     font-size: 64px;
     color: #1F3F68;
     width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
 }
 
 .topText {
     width: 425px;
+    margin-bottom: 71px;
+}
+
+.topButton {
+    opacity: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px 0px #356EAD33;
+    width: 220;
+    border-radius: 10px;
+    padding: 15px 50px;
 }
 
 .footerBlockHeader {
