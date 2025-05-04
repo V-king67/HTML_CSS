@@ -87,13 +87,56 @@ body {
     justify-content: space-between;
 }
 
+.main {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mainHeader {
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
 .mainCards {
     display: flex;
     justify-content: space-between;
+    padding-top: 64px;
 }
 
 .mainBlock {
     width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px 0px #1070B133;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainCardImg {
+    align-self: center;
+    margin-bottom: 51px;
+    height: 125px;
+}
+
+.mainCardHeader {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.mainCardText {
+    margin-bottom: 30px;
+}
+
+.mainCardLink {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
 }
 
 .contactBlock {
