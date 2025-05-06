@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -87,15 +87,15 @@ body {
     justify-content: space-between;
 }
 
-.main {
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
-
-.mainHeader {
+.indexHeader {
     font-weight: 300;
     line-height: 46px;
     letter-spacing: 0.05em;
+}
+
+.main {
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .mainCards {
@@ -137,6 +137,51 @@ body {
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
+}
+
+.exampleParent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.exampleItem {
+    position: relative;
+}
+
+.exampleText {
+    width: 75%;
+    margin: 32px auto 64px;
+    color: #222222;
+    opacity: initial;
+    text-align: center;
+}
+
+.exampleImg {
+    width: 100%;
+}
+
+.exampleImgTextBig {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.exampleImgTextSmall {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
 
 .contactBlock {
