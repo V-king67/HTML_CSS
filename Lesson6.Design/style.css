@@ -109,22 +109,39 @@ body {
     opacity: 100%;
 }
 
-.footerContacts ol {
+.footerOuterContacts {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
     opacity: 100%;
-    list-style-position: inside;
+    margin: 64px 0;
 }
 
-    .footerContacts ol li {
-        flex-grow: 1;
-        flex-basis: 0;
-    }
+.footerInnerContacts {
+    display: flex;
+    width: 360px;
+}
+
+.footerContactNumber {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.footerContactText {
+    margin-left: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    width: 310px;
+}
 
 .copyright {
     color: white;
     opacity: 40%;
+    padding-bottom: 64px;
 }
 
 .indexHeader {
