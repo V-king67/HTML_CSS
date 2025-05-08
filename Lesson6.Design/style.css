@@ -1,0 +1,287 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    opacity: 60%;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.topMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+
+.topInfo {
+    padding-top: 107px;
+    flex-grow: 1;
+    background-image: url(img/title.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.topHeader {
+    font-size: 64px;
+    color: #1F3F68;
+    width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.topText {
+    width: 425px;
+    margin-bottom: 71px;
+}
+
+.topButton {
+    opacity: 100%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px 0px #356EAD33;
+    border-radius: 10px;
+    padding: 15px 50px;
+    border-style: none;
+}
+
+.footer {
+    background: #316099;
+    margin-top: 112px;
+}
+
+.footerBlockOuter {
+    display: flex;
+    justify-content: space-between;
+    padding: 91px 0 96px;
+}
+
+.footerBlockHeader {
+    width: 340px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+}
+
+.footerBlockText {
+    width: 495px;
+    color: #FFFFFF;
+}
+
+.footerBlockButton {
+    padding: 15px 80px;
+    align-self: center;
+    color: #FFFFFF;
+    background: #5A98D0;
+    border-style: none;
+    opacity: 100%;
+}
+
+.footerOuterContacts {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    opacity: 100%;
+    margin: 64px 0;
+}
+
+.footerInnerContacts {
+    display: flex;
+    width: 360px;
+}
+
+.footerContactNumber {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.footerContactText {
+    margin-left: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    width: 310px;
+}
+
+.copyright {
+    color: white;
+    opacity: 40%;
+    padding-bottom: 64px;
+}
+
+.indexHeader {
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.main {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mainCards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+
+.mainBlock {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px 0px #1070B133;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainCardImg {
+    align-self: center;
+    margin-bottom: 51px;
+    height: 125px;
+}
+
+.mainCardHeader {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.mainCardText {
+    margin-bottom: 30px;
+}
+
+.mainCardLink {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+.exampleParent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.exampleItem {
+    position: relative;
+}
+
+.exampleText {
+    width: 75%;
+    margin: 32px auto 64px;
+    color: #222222;
+    opacity: initial;
+    text-align: center;
+}
+
+.exampleImg {
+    width: 100%;
+}
+
+.exampleImgTextBig {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.exampleImgTextSmall {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+.contactBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: inherit;
+}
+
+.subHeader {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.header3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.header4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.textIn {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.btnSend {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
