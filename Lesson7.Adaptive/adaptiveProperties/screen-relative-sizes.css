@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    /* 100 viewport height = 100% высоты окна */
+    height: 100vh;
+    background-color: forestgreen;
+}
+
+.center {
+    height: 100vh;
+    background-color: orange;
+}
+
+.text-screen {
+    /* Минимальный размер - 1 экран, но при превышении контента, 
+    размер увеличится */
+    min-height: 100vh;
+    background-color: cyan;
+}

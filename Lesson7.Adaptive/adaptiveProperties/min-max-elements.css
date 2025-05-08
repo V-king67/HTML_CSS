@@ -1,0 +1,10 @@
+.header {
+    min-height: 80px;
+    background: forestgreen;
+}
+
+.container {
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+}
