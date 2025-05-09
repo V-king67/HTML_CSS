@@ -1,0 +1,13 @@
+.header {
+    height: 80px;
+    background: #818181;
+}
+
+/* Медиа-запрос 
+    Стили внутри запроса применяются при удовлетворении условий 
+    (ширина от 320 до 500 пикселей)*/
+@media (min-width: 320px) and (max-width: 500px) {
+    .header {
+        background-color: darkolivegreen;
+    }
+}
