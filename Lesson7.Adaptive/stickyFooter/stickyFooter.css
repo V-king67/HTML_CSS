@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Весь контент кроме футера занимает все доступное пространство */
+.top {
+    flex-grow: 1;
+}
+
+.header {
+    height: 80px;
+    background: burlywood;
+}
+
+.footer {
+    height: 80px;
+    background: brown;
+}
