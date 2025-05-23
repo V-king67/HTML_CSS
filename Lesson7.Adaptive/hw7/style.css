@@ -39,6 +39,10 @@ body {
     padding-top: 34px;
 }
 
+.topMenuItem {
+    align-self: center;
+}
+
 .topInfo {
     padding-top: 107px;
     flex-grow: 1;
