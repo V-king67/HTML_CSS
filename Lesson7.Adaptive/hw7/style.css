@@ -22,7 +22,7 @@ body {
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -49,6 +49,7 @@ body {
     background-image: url(img/title.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .topHeader {
@@ -288,4 +289,65 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top {
+        background: linear-gradient(0deg, #DFEDF8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    }
+
+    .topInfo {
+        background-position: right 280px;
+        min-height: 580px;
+    }
+}
+
+@media (max-width: 667px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 376px;
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    }
+
+    .topMenu {
+        padding-top: 12px;
+    }
+
+    .topInfo {
+        padding-top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        min-height: auto;
+    }
+
+    .topHeader {
+        font-size: 32px;
+        line-height: 100%;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .topText {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .topButton {
+        font-size: 12px;
+        letter-spacing: 0em;
+        padding: 1px 13px;
+    }
 }
