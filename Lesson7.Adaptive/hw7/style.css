@@ -301,6 +301,10 @@ body {
         background: linear-gradient(0deg, #DFEDF8 8.84%, rgba(152, 195, 232, 0) 31.12%);
     }
 
+    .topMenu {
+        padding-top: 47px;
+    }
+
     .topInfo {
         background-position: right 280px;
         min-height: 580px;
