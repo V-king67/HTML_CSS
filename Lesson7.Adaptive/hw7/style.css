@@ -205,6 +205,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    gap: 32px;
 }
 
 .exampleItem {
@@ -309,6 +310,15 @@ body {
         background-position: right 280px;
         min-height: 580px;
     }
+
+    .mainCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainBlock {
+        margin-bottom: 32px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -353,5 +363,51 @@ body {
         font-size: 12px;
         letter-spacing: 0em;
         padding: 1px 13px;
+    }
+
+    .indexHeader {
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0;
+    }
+
+    .main {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+
+    .mainCards {
+        padding-top: 32px;
+    }
+
+    .mainBlock {
+        width: 100%;
+    }
+
+    .exampleText {
+        width: 100%;
+        margin-bottom: 82px;
+    }
+
+    .exampleImgTextBig {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+        top: 16px;
+        right: 16px;
+    }
+
+    .exampleImgTextSmall {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+        top: 16px;
+        left: 16px;
+    }
+
+    .exampleParent {
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 16px;
     }
 }
