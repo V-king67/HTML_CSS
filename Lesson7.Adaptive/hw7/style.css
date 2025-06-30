@@ -91,7 +91,7 @@ body {
 }
 
 .footerBlockHeader {
-    width: 340px;
+    max-width: 340px;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 36px;
@@ -101,7 +101,7 @@ body {
 }
 
 .footerBlockText {
-    width: 495px;
+    max-width: 495px;
     color: #FFFFFF;
 }
 
@@ -318,6 +318,36 @@ body {
 
     .mainBlock {
         margin-bottom: 32px;
+    }
+
+    .footerContainer {
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+
+    .footerOuterContacts {
+        flex-direction: column;
+    }
+
+    .footerBlockButton {
+        padding: 10px 50px;
+        text-wrap-mode: nowrap;
+    }
+
+    .footerBlockOuter {
+        gap: 51px;
+    }
+
+    .footerContactText {
+        margin-left: 45px;
+    }
+
+    .footerInnerContacts{
+        margin-bottom: 25px;
+    }
+
+    .footerOuterContacts{
+        margin: 64px 0 39px;
     }
 }
 
