@@ -336,17 +336,19 @@ body {
 
     .footerBlockOuter {
         gap: 51px;
+        padding-top: 47px;
+        padding-bottom: 64px;
     }
 
     .footerContactText {
         margin-left: 45px;
     }
 
-    .footerInnerContacts{
+    .footerInnerContacts {
         margin-bottom: 25px;
     }
 
-    .footerOuterContacts{
+    .footerOuterContacts {
         margin: 64px 0 39px;
     }
 }
