@@ -16,11 +16,9 @@
   margin: 0 auto;
   justify-content: center;
 }
-
 .menu__list {
   list-style-type: none;
 }
-
 .menu__link {
   text-decoration: none;
   display: block;
@@ -34,17 +32,16 @@
   display: flex;
   flex-wrap: wrap;
 }
+.content__item {
+  width: 400px;
+  height: 250px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
 
 .footer {
   height: 100px;
   background-color: grey;
   width: 1200px;
   margin: 0 auto;
-}
-
-.content__item {
-  width: 400px;
-  height: 250px;
-  border: 1px solid black;
-  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
