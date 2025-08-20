@@ -1,0 +1,45 @@
+/* Селектор атрибутов: После элемента в квадратных скобках 
+идет атрибут и его значение */
+
+/* Стилизует все элементы input типа password */
+input[type="password"] {
+    border: 2px solid red;
+}
+
+.login::before {
+    content: "Логин";
+    margin-right: 8px;
+}
+
+.password::before {
+    content: "Пароль";
+    margin-right: 8px;
+}
+
+/* Селектор атрибута для класса */
+.link[href="http://apple.com"] {
+    color: red;
+}
+
+/* Символ "^" выбирает все значения атрибутов, начинающиеся с заданного текста */
+a[href^="https://"] {
+    border: 1px dotted purple;
+}
+
+/* Символ "$" выбирает все значения атрибутов, заканчивающиеся заданным текстом 
+Данный стиль применяется ко всем изображениям формата jpg */
+img[src$=".jpg"] {
+    width: 100px;
+}
+
+/* РОССИЯ */
+a[href$=".ru"]{
+    color: red;
+    background-color: blue;
+}
+
+/* Символ "*" применяет стиль ко всем элементам, в котором заданный текст 
+присутсвует в любом месте значения атрибута */
+a[href*="microsoft"]{
+    background-color: aquamarine;
+}
