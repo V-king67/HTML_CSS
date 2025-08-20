@@ -1,0 +1,25 @@
+/* Псевдоэлементы записываются после двух двоеточий "::" */
+
+.firstElems::first-letter {
+    color: red;
+    font-size: 25px;
+}
+
+.firstElems::first-line {
+    font-size: 20px;
+}
+
+.warning::before {
+    content: "Важно! ";
+    font-weight: bold;
+}
+
+.warning::after {
+    content: " Будьте осторожны!";
+    font-weight: bold;
+}
+
+.select::selection {
+    color: white;
+    background-color: black;
+}
