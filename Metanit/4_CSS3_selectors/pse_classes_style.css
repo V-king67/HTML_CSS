@@ -1,0 +1,95 @@
+/* Псевдоклассы записываются после двоеточия */
+
+/* Применяется к ссылке, по которой еще не совершен переход */
+#pseudoLink:link {
+    color: blue;
+    text-decoration: none
+}
+
+/* Ссылка, по которой пользователь уже переходил */
+#pseudoLink:visited {
+    color: pink;
+    text-decoration: none
+}
+
+/* Применяется при наведении на элемент указателя мыши */
+#pseudoLink:hover {
+    color: red;
+    text-decoration: underline
+}
+
+/* Ссылка в момент нажатия */
+#pseudoLink:active {
+    color: yellow;
+    text-decoration: underline
+}
+
+/* Наведение мыши на поле ввода */
+.textBox:hover {
+    border: 2px solid red;
+}
+
+.textBox {
+    width: 300px;
+}
+
+:lang(en) {
+    color: red;
+}
+
+
+/* ПСЕВДОКЛАССЫ ДОЧЕРНИХ ЭЛЕМЕНТОВ */
+
+.parent p:first-child {
+    color: yellowgreen;
+}
+
+.parent p:nth-child(3) {
+    color: blueviolet;
+}
+
+.parent p:last-child {
+    color: burlywood;
+}
+
+/* ПСЕВДОКЛАССЫ ФОРМ */
+
+/* Также есть :disabled */
+form :enabled {
+    border: 2px black solid;
+    color: red;
+}
+
+/* Срабатывают для отмеченных элементов */
+:checked+span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Срабатывают для элементов формы, которые проходят или не проходят валидацию */
+.validInvalid :invalid {
+    border: 2px solid red;
+}
+
+.validInvalid :valid {
+    border: 2px solid green;
+}
+
+/* Срабатывают для элементов, которые попадают или не попадают в заданный диапазон 
+    (в основном для input type="number")*/
+.range :in-range {
+    border: 2px solid green;
+}
+
+.range :out-of-range {
+    border: 2px solid red;
+}
+
+/* Срабатывают для элементов в зависимости от атрибута required */
+.opt :optional {
+    border: 2px solid blue;
+}
+
+.opt :required {
+    border: 2px solid red;
+}

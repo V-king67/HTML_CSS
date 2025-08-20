@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Псевдоклассы</title>
+    <link href="pse_classes_style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="index.html">Вернуться на главную</a>
+    <h1>Псевдоклассы в CSS3</h1>
+
+    <a href="#" id="pseudoLink">Ссылка, к которой применяются псевдоклассы</a>
+    <p><input class="textBox" type="text" placeholder="При наведении курсора, поле обретает рамку" /></p>
+
+    <div>
+        <h3>Стиль применяется к параграфу с атрибутом lang="en" </h3>
+        <p lang="ru-RU">Я изучаю CSS3</p>
+        <p lang="en-US">I study CSS3</p>
+        <p lang="de-DE">Ich lerne CSS3</p>
+    </div>
+
+    <h2>Псевдоклассы дочерних элементов</h2>
+    <div class="parent">
+        <p>Первый дочерний элемент</p>
+        <p>Второй дочерний элемент</p>
+        <p>Третий дочерний элемент</p>
+        <p>Последний дочерний элемент</p>
+    </div>
+
+    <h2>Псевдоклассы форм</h2>
+    <form>
+        <h3>Псевдокласс :enabled</h3>
+        <p><input type="text" value="Enabled" /></p>
+        <p><input type="text" disabled value="Disabled" /></p>
+    </form>
+
+    <form>
+        <h3>Псевдокласс :checked</h3>
+        <p>
+            <input type="checkbox" checked name="html5" /><span>HTML5</span>
+        </p>
+        <p>
+            <input type="checkbox" name="dotnet" /><span>.NET</span>
+        </p>
+        <p>
+            <input type="checkbox" name="java" /><span>Java</span>
+        </p>
+
+        <h3>Псевдокласс :checked</h3>
+        <p>
+            <input type="radio" value="man" checked name="gender" /><span>мужской</span>
+        </p>
+        <p>
+            <input type="radio" value="woman" name="gender" /><span>женский</span>
+        </p>
+    </form>
+
+    <form class="validInvalid">
+        <h3>Псевдоклассы :valid и :invalid</h3>
+        <p><input type="text" name="login" placeholder="Введите логин" required /></p>
+        <p><input type="password" name="password" placeholder="Введите пароль" required /></p>
+        <input type="submit" value="Войти" />
+    </form>
+
+    <form class="range">
+        <h3>Псевдоклассы :in-range и :out-of-range</h3>
+        <label for="age">Ваш возраст:</label>
+        <input type="number" min="1" max="100" value="10" id="age" name="age" />
+        </p>
+        <input type="submit" value="Отправить" />
+    </form>
+
+    <form class="opt">
+        <h3>Псевдоклассы :required и :optional</h3>
+        <p>
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="login" required />
+        </p>
+        <p>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required />
+        </p>
+        <p>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" />
+        </p>
+        <input type="submit" value="Регистрация" />
+    </form>
+</body>
+
+</html>
