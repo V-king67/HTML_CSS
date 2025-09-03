@@ -1,0 +1,61 @@
+.text_center_white {
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.block {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.linear_left {
+    background-image: linear-gradient(left, black, white);
+    background-image: -o-linear-gradient(left, black, white);
+    background-image: -moz-linear-gradient(left, black, white);
+    background-image: -webkit-linear-gradient(left, black, white);
+}
+
+.linear_bottom {
+    background-image: linear-gradient(bottom, black, white);
+    background-image: -o-linear-gradient(bottom, black, white);
+    background-image: -moz-linear-gradient(bottom, black, white);
+    background-image: -webkit-linear-gradient(bottom, black, white);
+}
+
+.linear_top-left {
+    background-image: linear-gradient(top left, black, white);
+    background-image: -o-linear-gradient(top left, black, white);
+    background-image: -moz-linear-gradient(top left, black, white);
+    background-image: -webkit-linear-gradient(top left, black, white);
+}
+
+.linear_120deg {
+    background-image: linear-gradient(120deg, black, white);
+    background-image: -o-linear-gradient(120deg, black, white);
+    background-image: -moz-linear-gradient(120deg, black, white);
+    background-image: -webkit-linear-gradient(120deg, black, white);
+}
+
+.linear_top_3color {
+    background-image: linear-gradient(top, red, #ccc, blue);
+    background-image: -o-linear-gradient(top, red, #ccc, blue);
+    background-image: -moz-linear-gradient(top, red, #ccc, blue);
+    background-image: -webkit-linear-gradient(top, red, #ccc, blue);
+}
+
+.linear_left_fixed-ratio {
+    background-image: linear-gradient(left, #ccc, red 20%, blue 80%, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, red 20%, blue 80%, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, red 20%, blue 80%, #ccc);
+    background-image: -webkit-linear-gradient(left, #ccc, red 20%, blue 80%, #ccc);
+}
+
+.repeating_left {
+    background-image: repeating-linear-gradient(left, #ccc 20px, red 30px, rgba(0, 0, 126, .5) 40px);
+    background-image: -moz-repeating-linear-gradient(left, #ccc 20px, red 30px, rgba(0, 0, 126, .5) 40px);
+    background-image: -webkit-repeating-linear-gradient(left, #ccc 20px, red 30px, rgba(0, 0, 126, .5) 40px);
+}
